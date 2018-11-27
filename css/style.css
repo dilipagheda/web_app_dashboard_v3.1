@@ -86,7 +86,7 @@ sup {
   flex-direction: column;
   /* border-bottom: 1px solid black; */
   grid-area: line-chart;
-  padding: 20px;
+  padding: 30px;
 }
 
 .bar-chart-container {
@@ -98,7 +98,7 @@ sup {
   border-top: 1px solid black;
   border-right: 1px solid black;
   grid-area: bar-chart;
-  padding: 20px;
+  padding: 30px;
 }
 
 .line-chart,
@@ -122,12 +122,12 @@ sup {
 }
 
 .bar-chart-container {
-  padding: 20px;
+  padding: 30px;
   /* border: 1px solid black; */
 }
 
 .doughnut-chart-container {
-  padding: 20px;
+  padding: 30px;
   /* border: 1px solid black; */
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -139,7 +139,7 @@ sup {
   display: flex;
   flex-direction: column;
   grid-area: social-stats;
-  padding: 20px;
+  padding: 30px;
 }
 
 .social-stats-wrapper {
@@ -189,7 +189,7 @@ sup {
   border-right: 1px solid black;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 20px;
+  padding: 30px;
   margin-top: 20px;
   grid-area: new-members;
 }
@@ -240,7 +240,7 @@ img[src="icons/right-arrow.svg"] {
   flex-direction: column;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 20px;
+  padding: 30px;
   margin-top: 20px;
   grid-area: activity;
 }
@@ -253,7 +253,7 @@ img[src="icons/right-arrow.svg"] {
   border-right: 1px solid black;
   /* border-top:  1px solid black;
   border-bottom 1px solid black; */
-  padding: 20px;
+  padding: 30px;
   /* margin-top: 20px; */
 }
 
@@ -276,7 +276,7 @@ img[src="icons/right-arrow.svg"] {
 /* settings */
 .settings-container {
   grid-area: settings;
-  padding: 20px;
+  padding: 30px;
 }
 
 .settings-section {
