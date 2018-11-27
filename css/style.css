@@ -317,12 +317,12 @@ img[src="icons/right-arrow.svg"] {
 }
 .save-button{
   grid-area:save-button;
-  width:70%;
+  width:120%;
   margin:10px 0;
 }
 .cancel-button{
   grid-area:cancel-button;
-  width:45%;
+  width:75%;
   margin:10px 0;
   margin-left: auto;
 }
