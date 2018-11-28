@@ -18,7 +18,12 @@
     <!-- header -->
     <div class="header">
       <span class="app-title">YourApp<sup>TM</sup></span>
-      <img src="icons/icon-bell.svg" alt="">
+      <div class="bell-icon-container">
+        <img src="icons/icon-bell.svg" alt="">
+        <div class="dot"></div>
+      </div>
+      <div class="divider"></div>
+
       <img src="images/member-4.jpg" alt="">
       <span class="user-name">Josh Sullivan</span>
     </div>
@@ -37,10 +42,10 @@
       <div class="line-chart-info">
         <h1 class="section-title">Traffic</h1>
         <div class="line-chart-buttons">
-          <button>Hourly</button>
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+          <button class="line-chart-btn">Hourly</button>
+          <button class="line-chart-btn">Daily</button>
+          <button class="line-chart-btn">Weekly</button>
+          <button class="line-chart-btn">Monthly</button>
         </div>
       </div>
       <div class="line-chart">
@@ -216,9 +221,9 @@
         <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
         <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
       </select>
+
       <button class="save-button">SAVE</button>
       <button class="cancel-button">CANCEL</button>
-    </div>
 
     </div>
 
