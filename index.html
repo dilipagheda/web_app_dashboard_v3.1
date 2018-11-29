@@ -15,7 +15,7 @@
 
 <body>
   <div class="wrapper">
-    <!-- header -->
+    <!-- main header bar at the top-->
     <div class="header">
       <span class="app-title">YourApp<sup>TM</sup></span>
       <div class="bell-icon-container">
@@ -23,9 +23,23 @@
         <div class="dot"></div>
       </div>
       <div class="divider"></div>
-
       <img src="images/member-4.jpg" alt="">
       <span class="user-name">Josh Sullivan</span>
+    </div>
+
+    <!-- header - search bar -->
+    <div class="header-search-bar">
+      <h1>Dashboard</h1>
+      <div>
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+
+    <!-- notification bar with close button -->
+    <div class="notification-bar">
+      <span class="alert">Alert</span>
+      <span class="message">Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus.</span>
+      <div class="close">X</div>
     </div>
     <!-- sidebar -->
     <div class="sidebar">
@@ -42,10 +56,10 @@
       <div class="line-chart-info">
         <h1 class="section-title">Traffic</h1>
         <div class="line-chart-buttons">
-          <button class="line-chart-btn">Hourly</button>
-          <button class="line-chart-btn">Daily</button>
-          <button class="line-chart-btn">Weekly</button>
-          <button class="line-chart-btn">Monthly</button>
+          <div class="line-chart-btn line-chart-btn-highlighted">Hourly</div>
+          <div class="line-chart-btn">Daily</div>
+          <div class="line-chart-btn">Weekly</div>
+          <div class="line-chart-btn">Monthly</div>
         </div>
       </div>
       <div class="line-chart">
@@ -181,8 +195,8 @@
     <!-- message user -->
     <div class="message-user-container">
       <h1 class="section-title">Message User</h1>
-      <input class="message-user-item" type="text">
-      <textarea class="message-user-item" name="" id="" cols="30" rows="5"></textarea>
+      <input class="message-user-item" type="text" placeholder="Search for User">
+      <textarea class="message-user-item" name="" id="" cols="30" rows="5" placeholder="Message for User"></textarea>
       <button class="message-user-item send-button">SEND</button>
     </div>
 

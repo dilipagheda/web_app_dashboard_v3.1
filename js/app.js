@@ -148,3 +148,46 @@ var doughnutChart = new Chart($(".doughnut-chart canvas"), {
 
   }
 });
+
+//click listener for line chart buttons
+$('.line-chart-buttons').on('click',(e)=>{
+  console.log(e.target);
+  let $btn_clicked = $(e.target);
+  if($btn_clicked.attr('class').includes('line-chart-btn')){
+    $('.line-chart-buttons div').removeClass('line-chart-btn-highlighted');
+    $btn_clicked.addClass('line-chart-btn-highlighted');
+  }
+});
+
+//close notification bar
+$('.notification-bar .close').on('click',(e)=>{
+  $('.notification-bar').remove();
+});
+
+//send button
+$('.send-button').on('click',(e)=>{
+  let userName = $("input[class='message-user-item']");
+  let message = $("textarea[class='message-user-item']");
+  if(userName.val().length===0){
+    console.log("username empty");
+    $("<span class='error-msg'>Username can not be empty!</span>").insertAfter(userName);
+  }
+  if(message.val().length===0){
+    console.log("msg empty");
+    $("<span class='error-msg'>Message can not be empty!</span>").insertAfter(message);
+  }
+  if(userName.val().length > 0 && message.val().length > 0){
+    console.log('msg sent');
+    $("<span class='info-msg'>Message sent!</span>").insertBefore('.message-user-container .section-title');
+    setTimeout(function(){
+      $('.info-msg').remove();
+      userName.val("");
+      message.val("");
+    },2000);
+
+  }
+});
+// clear error messages
+$('.message-user-item').on('focus',(e)=>{
+  $('.error-msg').remove();
+});
