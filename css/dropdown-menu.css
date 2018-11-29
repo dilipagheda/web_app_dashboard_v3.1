@@ -1,0 +1,64 @@
+/* drop down menu */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4F4C6D;
+  opacity: 0.9;
+
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-notification-bar:hover {
+  background-color: #72C99A;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .bell-icon-container {
+  background-color: #3e8e41;
+}
+
+/* this is just a comment */
+
+.dropdown-notification-bar{
+  background-color: #4F4C6D;
+  text-align: center;
+  display: flex;
+}
+
+
+.dropdown-notification-bar .dropdown-message
+{
+  align-self: center;
+  font-weight:lighter;
+  color:white;
+
+}
+.dropdown-notification-bar .dropdown-close{
+  align-self: center;
+  margin-left: auto;
+  font-weight: 800;
+  margin-right:10px;
+}
+.dropdown-notification-bar .dropdown-close:hover{
+  cursor: pointer;
+}

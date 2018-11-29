@@ -191,3 +191,8 @@ $('.send-button').on('click',(e)=>{
 $('.message-user-item').on('focus',(e)=>{
   $('.error-msg').remove();
 });
+
+//drop-down close button
+$('.dropdown-close').on('click',(e)=>{
+  $(e.target.parentNode).remove();
+});
