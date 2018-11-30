@@ -156,6 +156,26 @@ $('.line-chart-buttons').on('click',(e)=>{
   if($btn_clicked.attr('class').includes('line-chart-btn')){
     $('.line-chart-buttons div').removeClass('line-chart-btn-highlighted');
     $btn_clicked.addClass('line-chart-btn-highlighted');
+    if($btn_clicked.text() === 'Daily'){
+      lineChart.data.datasets[0].data = [210,320,250,200,220,420,280,220,400,300,200];
+      lineChart.data.labels = ['Wed','Thu','Fri','Sat','Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+      lineChart.update();
+    }else if($btn_clicked.text() === 'Hourly'){
+      lineChart.data.datasets[0].data = [110,220,150,500,120,220,380,420,500,200,100];
+      lineChart.data.labels = ['12AM','1AM','2AM','3AM','4AM','5AM','6AM','7AM','8AM','9AM','10AM'];
+      lineChart.update();
+
+    }else if($btn_clicked.text() === 'Weekly'){
+      lineChart.data.datasets[0].data = [610,320,450,300,220,120,180,320,400,500,300];
+      lineChart.data.labels = ['Week1','Week2','Week3','Week4','Week5','Week6','Week7','Week8','Week9','Week10','Week11'];
+      lineChart.update();
+
+    }else if($btn_clicked.text() === 'Monthly'){
+      lineChart.data.datasets[0].data = [310,120,150,300,220,520,380,320,100,200,400];
+      lineChart.data.labels = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
+      lineChart.update();
+
+    }
   }
 });
 

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/toggle-switch-customisation.css">
   <link rel="stylesheet" href="css/dropdown-menu.css">
+  <link rel="stylesheet" href="css/autocomplete.css">
   <link href="https://fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <title>Web App Dashboard</title>
@@ -79,8 +80,8 @@
       <div class="line-chart-info">
         <h1 class="section-title">Traffic</h1>
         <div class="line-chart-buttons">
-          <div class="line-chart-btn line-chart-btn-highlighted">Hourly</div>
-          <div class="line-chart-btn">Daily</div>
+          <div class="line-chart-btn">Hourly</div>
+          <div class="line-chart-btn line-chart-btn-highlighted">Daily</div>
           <div class="line-chart-btn">Weekly</div>
           <div class="line-chart-btn">Monthly</div>
         </div>
@@ -218,7 +219,9 @@
     <!-- message user -->
     <div class="message-user-container">
       <h1 class="section-title">Message User</h1>
-      <input class="message-user-item" type="text" placeholder="Search for User">
+      <div class="autocomplete">
+        <input id="message-user-item-input" class="message-user-item" type="text" placeholder="Search for User">
+      </div>
       <textarea class="message-user-item" name="" id="" cols="30" rows="5" placeholder="Message for User"></textarea>
       <button class="message-user-item send-button">SEND</button>
     </div>
@@ -268,7 +271,7 @@
     <!--end of wraper div -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
-
+    <script src="js/autocomplete.js"></script>
     <script src="js/app.js"></script>
 </body>
 
