@@ -40,7 +40,7 @@ body {
 
 .header-search-bar div {
   /* display: flex; */
-  margin:0 10px;
+  margin: 0 10px;
   /* height: 80px; */
   /* border: 1px solid #DFDFDF; */
   /* background-color: #FBFBFB; */
@@ -57,17 +57,17 @@ body {
   font-size: 15px;
   padding-left: 10px;
   background-image: right-arrow.svg;
-
 }
+
 .input-field-container span {
   position: absolute;
-  top:20px;
-  right:20px;
+  top: 20px;
+  right: 20px;
 }
+
 .input-field-container {
   position: relative;
   margin: 10px auto;
-
 }
 
 .section-title {
@@ -157,8 +157,8 @@ transition: transform 1s;
 }
 
 .icons img {
-  height: 10%;
-  width: 10%;
+  height: 30px;
+  width: 30px;
   align-items: center;
   margin: 0 20px;
 }
@@ -205,8 +205,8 @@ transition: transform 1s;
 .line-chart-buttons {
   /* display: flex;
   flex-direction: row; */
-  margin:10px;
-  margin-bottom:10px;
+  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .bar-chart-container {
@@ -275,7 +275,7 @@ transition: transform 1s;
 }
 
 .social-stat-info-number {
-    font-size: 8vw;
+  font-size: 8vw;
 }
 
 .new-members-container {
@@ -310,7 +310,6 @@ transition: transform 1s;
 .activity-item:last-of-type {
   border-bottom: none;
   border-color: #DFDFDF;
-
 }
 
 .new-member-item img,
@@ -326,7 +325,7 @@ img[src="icons/right-arrow.svg"] {
   border-radius: 0;
   position: absolute;
   top: 50px;
-  right:5px;
+  right: 5px;
 }
 
 .new-member-info,
@@ -343,6 +342,7 @@ img[src="icons/right-arrow.svg"] {
 .activity-info span {
   text-align: center;
 }
+
 .new-member-email {
   color: #8588C1;
 }
@@ -406,17 +406,26 @@ img[src="icons/right-arrow.svg"] {
   grid-area: settings;
   padding: 30px;
   border-top: 1px solid #DFDFDF;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .settings-section {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 45% 35% 20%;
   grid-template-areas:
-    "send-email-label send-email-switch"
-    "send-profile-label send-profile-switch"
-    "time-zone-dropdown time-zone-dropdown "
-    "save-button cancel-button";
+    "send-email-label send-email-switch ."
+    "send-profile-label send-profile-switch ."
+    "time-zone-dropdown time-zone-dropdown time-zone-dropdown";
+
+}
+
+.save-cancel-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: save-cancel-buttons-container;
+  margin-top: 7px;
 }
 
 .send-email-label {
@@ -442,49 +451,29 @@ img[src="icons/right-arrow.svg"] {
 .time-zone-dropdown {
   height: 40px;
   grid-area: time-zone-dropdown;
-
   width: 100%;
   font-size: 15px;
   margin-bottom: 10px;
   margin-top: 30px;
-
-
   background-image: url("../icons/down-arrow.svg");
- background-repeat: no-repeat;
- background-position-x: 100%;
- background-position-y: 1px;
-
- -webkit-appearance: none;
- -moz-appearance: none;
- appearance: none;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 1px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-/* .dropdown-container {
-  grid-area: time-zone-dropdown;
-  /* background-color: red; */
-  background: url(icons/right-arrow.svg) no-repeat right white;
-  position: relative;
-  display: inline-block;
-
-} */
-/* .dropdown-container img {
-  position: absolute;
-  top:10px;
-  right:0;
-  color:black;
-  background-color: yellow;
-} */
 .save-button {
   grid-area: save-button;
-  width: 120%;
-  margin: 10px 0;
+  width: 50%;
+  margin-right: 10px;
 }
 
 .cancel-button {
   grid-area: cancel-button;
-  width: 75%;
-  margin: 10px 0;
-  margin-left: auto;
+  width: 50%;
+  margin-left: 10px;
 }
 
 .line-chart-btn {
@@ -494,7 +483,6 @@ img[src="icons/right-arrow.svg"] {
   font-size: 15px;
   color: #8F8F8F;
   display: inline-block;
-
 }
 
 .line-chart-btn:hover {
@@ -511,16 +499,18 @@ img[src="icons/right-arrow.svg"] {
 }
 
 .notification-bar-container {
- position: relative;
- grid-area: notification-bar-container;
- margin:0 10px;
+  position: relative;
+  grid-area: notification-bar-container;
+  margin: 0 10px;
 }
-.notification-bar-container .close{
+
+.notification-bar-container .close {
   position: absolute;
-  top:5px;
-  right:5px;
-  color:white;
+  top: 5px;
+  right: 5px;
+  color: white;
 }
+
 /* notification bar */
 .notification-bar {
   /* height: 50px; */
@@ -530,7 +520,7 @@ img[src="icons/right-arrow.svg"] {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  padding:5px;
+  padding: 5px;
 }
 
 .notification-bar .alert {
@@ -551,7 +541,6 @@ img[src="icons/right-arrow.svg"] {
   margin-right: 10px;
   font-weight: 800;
 } */
-
 .notification-bar-container .close:hover {
   cursor: pointer;
 }

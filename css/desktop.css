@@ -128,18 +128,18 @@
     padding: 15px;
   }
 
-  .icons {
+  /* .icons {
     display: flex;
     flex-direction: column;
     align-content: center;
-  }
+  } */
 
-  .icons img {
+  /* .icons img {
     height: 50%;
     width: 50%;
     align-self: center;
     margin: 20px 0;
-  }
+  } */
 
   .line-chart-container {
     background-color: #FFF;
@@ -274,8 +274,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid black;
-    border-color: #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
   }
 
   .new-member-item:last-of-type,
@@ -302,14 +301,17 @@
   .activity-info {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
-    margin: 0 10px;
+    /* flex-grow: 2; */
+    /* margin: 0 10px; */
+align-items: flex-start;
   }
 
   .new-member-email {
     color: #8588C1;
   }
-
+  .activity-info span {
+    text-align: left;
+  }
   /* Recent Activity */
   .activity-container {
     display: flex;
@@ -366,12 +368,12 @@
   }
 
   /* settings */
-  .settings-container {
+  /* .settings-container {
     grid-area: settings;
     padding: 30px;
-  }
+  } */
 
-  .settings-section {
+  /* .settings-section {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
@@ -379,7 +381,7 @@
       "send-profile-label send-profile-switch"
       "time-zone-dropdown time-zone-dropdown "
       "save-button cancel-button";
-  }
+  } */
 
   .send-email-label {
     grid-area: send-email-label;
@@ -409,7 +411,7 @@
     margin-top: 30px;
   }
 
-  .save-button {
+  /* .save-button {
     grid-area: save-button;
     width: 120%;
     margin: 10px 0;
@@ -420,7 +422,7 @@
     width: 75%;
     margin: 10px 0;
     margin-left: auto;
-  }
+  } */
 
   .line-chart-btn {
     padding: 5px 15px;

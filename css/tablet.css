@@ -2,17 +2,18 @@
   .wrapper {
   font-family: 'Niramit', sans-serif;
   display: grid;
-  grid-template-columns:50% 50%;
+  grid-template-columns:6% 47% 47%;
   grid-template-areas:
-    "header header"
-    "header-search-bar header-search-bar"
-    "notification-bar-container notification-bar-container"
-    "line-chart line-chart"
-    "bar-chart doughnut-chart"
-    "social-stats social-stats"
-    "new-members new-members"
-    "activity activity"
-    "message-user settings";
+    "header header header"
+    "sidebar header-search-bar header-search-bar"
+    "sidebar notification-bar-container notification-bar-container"
+    "sidebar line-chart line-chart"
+    "sidebar bar-chart doughnut-chart"
+    "sidebar social-stats social-stats"
+    "sidebar new-members new-members"
+    "sidebar activity activity"
+    "sidebar message-user message-user"
+    "sidebar settings settings";
 }
   .header-search-bar {
     grid-area: header-search-bar;
@@ -144,8 +145,8 @@
   }
 
   .icons img {
-    height: 50%;
-    width: 50%;
+    height: 40px;
+    width: 40px;
     align-self: center;
     margin: 20px 0;
   }
@@ -317,8 +318,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    /* flex-grow: 2; */
     margin: 0 10px;
   }
 
@@ -330,7 +329,6 @@
   .activity-container {
     display: flex;
     flex-direction: column;
-    /* border-top: 1px solid black; */
     border-bottom: 1px solid black;
     border-color: #DFDFDF;
     padding: 30px;
@@ -380,23 +378,6 @@
     text-align: center;
   }
 
-  /* settings */
-  .settings-container {
-    grid-area: settings;
-    padding: 30px;
-    border-top:none;
-  }
-
-  .settings-section {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-areas:
-      "send-email-label send-email-switch"
-      "send-profile-label send-profile-switch"
-      "time-zone-dropdown time-zone-dropdown "
-      "save-button cancel-button";
-  }
-
   .send-email-label {
     grid-area: send-email-label;
     margin: 15px 0;
@@ -423,19 +404,6 @@
     font-size: 15px;
     margin-bottom: 10px;
     margin-top: 30px;
-  }
-
-  .save-button {
-    grid-area: save-button;
-    width: 120%;
-    margin: 10px 0;
-  }
-
-  .cancel-button {
-    grid-area: cancel-button;
-    width: 75%;
-    margin: 10px 0;
-    margin-left: auto;
   }
 
   .line-chart-btn {
@@ -495,13 +463,6 @@
     margin: 0 10px;
     font-weight: lighter;
   }
-
-  /* .notification-bar .close {
-    align-self: center;
-    margin-left: auto;
-    margin-right: 10px;
-    font-weight: 800;
-  } */
 
   .notification-bar .close:hover {
     cursor: pointer;
