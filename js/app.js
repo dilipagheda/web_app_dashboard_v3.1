@@ -180,8 +180,8 @@ $('.line-chart-buttons').on('click',(e)=>{
 });
 
 //close notification bar
-$('.notification-bar .close').on('click',(e)=>{
-  $('.notification-bar').remove();
+$('.notification-bar-container .close').on('click',(e)=>{
+  $('.notification-bar-container').remove();
 });
 
 //send button
@@ -216,3 +216,63 @@ $('.message-user-item').on('focus',(e)=>{
 $('.dropdown-close').on('click',(e)=>{
   $(e.target.parentNode).remove();
 });
+
+//local storage - save settings
+
+$("#send-email-notifications").on('change', function() {
+  if ($(this).is(':checked')) {
+    $(this).attr('value', 'true');
+  } else {
+    $(this).attr('value', 'false');
+  }
+
+  console.log($('#send-email-notifications').val());
+});
+
+$("#send-profile").on('change', function() {
+  if ($(this).is(':checked')) {
+    $(this).attr('value', 'true');
+  } else {
+    $(this).attr('value', 'false');
+  }
+
+  console.log($('#send-profile').val());
+});
+
+$('.save-button').on('click',(e)=>{
+  console.log("save");
+  localStorage.setItem("send-email-notifications",$('#send-email-notifications').val());
+  localStorage.setItem("send-profile-public",$('#send-profile').val());
+  localStorage.setItem("timezone-value",$('.time-zone-dropdown').val());
+  //localStorage.setItem("time-zone-value",$('.time-zone-dropdown:selected').text());
+
+});
+
+let sendProfile = localStorage.getItem("send-profile-public");
+let emailNotification = localStorage.getItem("send-email-notifications");
+
+if(emailNotification === 'true'){
+  $('#send-email-notifications').prop('checked',true);
+  $('#send-email-notifications').prop('value',true);
+
+}else{
+  $('#send-email-notifications').prop('checked',false);
+  $('#send-email-notifications').prop('value',false);
+
+}
+
+if(sendProfile === 'true'){
+  $('#send-profile').prop('checked',true);
+  $('#send-profile').prop('value',true);
+
+}else{
+  $('#send-profile').prop('checked',false);
+  $('#send-profile').prop('value',false);
+
+}
+
+let timezoneValue = localStorage.getItem("timezone-value");
+console.log(timezoneValue);
+if (timezoneValue !== null){
+  $('.time-zone-dropdown').val(timezoneValue);
+}
