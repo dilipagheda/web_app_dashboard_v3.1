@@ -274,9 +274,9 @@ transition: transform 1s;
   font-weight: 600;
 }
 
-  .social-stat-info-number {
-    font-size: 4vw;
-  }
+.social-stat-info-number {
+    font-size: 8vw;
+}
 
 .new-members-container {
   display: flex;
