@@ -102,10 +102,7 @@ sup {
   margin-right: 15px;
 }
 
-.bell-icon-container img {
-  height: 20px;
-  width: 20px;
-}
+
 
 /* .bell-icon-container:hover {
 transform: scale(1.3,1.3);
@@ -544,3 +541,21 @@ img[src="icons/right-arrow.svg"] {
 .notification-bar-container .close:hover {
   cursor: pointer;
 }
+
+.bell-icon-container:hover{
+  transform:scale(1.2) rotate(360deg);
+  transition: .3s ease-in;
+}
+/* .bell-icon-container:hover .st0 {
+
+ } */
+
+ /* .bell-icon-container .st0 {
+     fill:white;
+     transition: .5s ease-out-in;
+  } */
+
+/* .bell-icon-container img {
+  height: 20px;
+  width: 20px;
+} */

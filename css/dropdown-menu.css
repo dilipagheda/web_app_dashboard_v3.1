@@ -29,13 +29,14 @@
   background-color: #72C99A;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
-.dropdown:hover .bell-icon-container {
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* .dropdown:hover .bell-icon-container {
   background-color: #3e8e41;
-}
+} */
 
 /* this is just a comment */
 

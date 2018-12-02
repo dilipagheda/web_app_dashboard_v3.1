@@ -368,3 +368,10 @@ console.log(timezoneValue);
 if (timezoneValue !== null) {
   $('.time-zone-dropdown').val(timezoneValue);
 }
+
+//display notification items (dropdown) when bell icon is clicked
+$('.bell-icon-container').on('click',(e)=>{
+  $('.dropdown-content').toggle();
+  $('.dot').hide();
+
+});

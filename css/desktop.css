@@ -367,22 +367,6 @@ align-items: flex-start;
     text-align: center;
   }
 
-  /* settings */
-  /* .settings-container {
-    grid-area: settings;
-    padding: 30px;
-  } */
-
-  /* .settings-section {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-areas:
-      "send-email-label send-email-switch"
-      "send-profile-label send-profile-switch"
-      "time-zone-dropdown time-zone-dropdown "
-      "save-button cancel-button";
-  } */
-
   .send-email-label {
     grid-area: send-email-label;
     margin: 15px 0;
@@ -411,18 +395,6 @@ align-items: flex-start;
     margin-top: 30px;
   }
 
-  /* .save-button {
-    grid-area: save-button;
-    width: 120%;
-    margin: 10px 0;
-  }
-
-  .cancel-button {
-    grid-area: cancel-button;
-    width: 75%;
-    margin: 10px 0;
-    margin-left: auto;
-  } */
 
   .line-chart-btn {
     padding: 5px 15px;
