@@ -6,4 +6,5 @@ This is the 7th Project for Treehouse - Frontend Techdegree. Its about creating 
 - Access this project live at http://dilipagheda.com/web_app_dashboard_v3.1/
 
 # Skills gained
-HTML, CSS, JavaScript, Fetch API, parsing JSON
+HTML, CSS, JavaScript, Chart.js
+
